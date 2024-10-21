@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+    --azul-escuro: #034e7b;
+    --amarelo: #e1b811;
+    --branco: #ffffff;
+    --cinza-claro: #f5f5f5;
+    --cinza-medio: #d9d9d9;
+    --verde-claro: #0b4730;
+}
+
+body {
+    background-color: var(--cinza-claro);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container1 {
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--branco);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: var(--azul-escuro);
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.descricao {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: var(--verde-claro);
+}
+
+.detalhes-pagamento ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.detalhes-pagamento li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--azul-escuro);
+    font-weight: 500;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: var(--verde-claro);
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--cinza-medio);
+    border-radius: 5px;
+    background-color: var(--cinza-claro);
+    cursor: pointer;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+.btn-enviar {
+    background-color: var(--amarelo);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-enviar:hover {
+    background-color: #c79b0f;
+    transform: scale(1.05);
+}
